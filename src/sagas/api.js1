@@ -1,0 +1,6 @@
+export default function searchByLocation(id) {
+  return fetch(`http://localhost:3003/todos/${id}`)
+    .then(res => res.json())
+    // .then(payload => { payload })
+    // .catch(error => { error });
+}
